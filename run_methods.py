@@ -37,10 +37,10 @@ with open('test.csv', 'rb') as f:
 X_test = np.array(data)
 
 
-for i in range(1,len(X_test)):
-	X_test[i] = map(int, X_test[i])	
+#for i in range(1,len(X_test)):
+#	X_test[i] = map(int, X_test[i])	
 	
-Z = logreg.predict(examples)
+Z = logreg.predict(X_test)
 
 print Z
 

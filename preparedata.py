@@ -58,16 +58,16 @@ d9 = d9[:qtd,:]
 with open('prepared_data.csv', 'wb') as file:
 	csv_writer = csv.writer(file) 
 	for i in range(0,qtd):
-		csv_writer.writerow(map(int, d0[i,:]))
-		csv_writer.writerow(map(int, d1[i,:]))
-		csv_writer.writerow(map(int, d2[i,:]))
-		csv_writer.writerow(map(int, d3[i,:]))
-		csv_writer.writerow(map(int, d4[i,:]))
-		csv_writer.writerow(map(int, d5[i,:]))
-		csv_writer.writerow(map(int, d6[i,:]))
-		csv_writer.writerow(map(int, d7[i,:]))
-		csv_writer.writerow(map(int, d8[i,:]))
-		csv_writer.writerow(map(int, d9[i,:]))
+		csv_writer.writerow(d0[i,:])
+		csv_writer.writerow(d1[i,:])
+		csv_writer.writerow(d2[i,:])
+		csv_writer.writerow(d3[i,:])
+		csv_writer.writerow(d4[i,:])
+		csv_writer.writerow(d5[i,:])
+		csv_writer.writerow(d6[i,:])
+		csv_writer.writerow(d7[i,:])
+		csv_writer.writerow(d8[i,:])
+		csv_writer.writerow(d9[i,:])
 
 		
 print ("DONE! Data prepared.")
